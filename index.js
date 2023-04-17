@@ -66,7 +66,7 @@ function init() {
 }
 init();
 
-// README,md File
+// README.md File
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(cwd(). fileName), data);
+    return fs.writeFileSync(path.join(cwd().fileName), data);
 }
