@@ -1,7 +1,7 @@
 // function tthat returns a license badge
 function renderLicenseBadge(license) {
     if (license !== "none") {
-        return `![GitHub License](https://img.shields.io/badge/license=${license}=yellowgreen.svg)`;
+        return `![GitHub License](https://img.shields.io/badge/license=${License}=yellowgreen.svg)`;
     }
     return "";
 }
@@ -17,16 +17,16 @@ function renderLicenseLink(license) {
 function renderLicenseSec(license) {
     if (license !== "none") {
         return `## License
-            Licensed under the ${license} license.`;
+            Licensed under the ${License} license.`;
     }
     return "";
 }
 
 // function to generate markdown
 function generateMarkdown(data) {
-    return `# ${data.title}
-    by ${data.name}
-    ${renderLicenseBadge(data.license)}
+    return `# ${data.Title}
+    by ${data.Name}
+    ${renderLicenseBadge(data.License)}
     ## Table of Contents
     *[Description](#Description)
     *[Installation](#Installation)
@@ -34,24 +34,24 @@ function generateMarkdown(data) {
     *[Contact-Me](#Contact-Me)
     *[Contributors](#Contributors)
     *[Tests](#Tests)
-    ${renderLicenseLink(data.license)}
+    ${renderLicenseLink(data.License)}
     ## Description
-    ${data.description}
+    ${data.Description}
     ## Requirements
-    ${data.require}
+    ${data.Require}
     ## Usage
-    ${data.usage}
+    ${data.Usage}
     ## Contact-Me
-    * Name - ${data.name}
-    * Email - ${data.email}
-    * GitHub - [${data.creator}](https://github.com/${data.creator}/)
+    * Name - ${data.Name}
+    * Email - ${data.Email}
+    * GitHub - [${data.Creator}](https://github.com/${data.Creator}/)
     ## Contributors
-    ${data.contributors}
+    ${data.Contributors}
     ## Testing
     \`\`\`
-    ${data.test}
+    ${data.Test}
     \`\`\`
-    ${renderLicenseSec(data.license)}
+    ${renderLicenseSec(data.License)}
     `;
 }
 
