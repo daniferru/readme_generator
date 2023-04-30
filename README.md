@@ -14,7 +14,6 @@ node index.js
 From there, you will be prompted for information you would like to have in your README.
 
 View a complete video demonstration of the application: 
-https://user-images.githubusercontent.com/120329230/235375455-376dd41a-890a-4719-9414-d4167b7aa3ff.mp4
 
 ## License
 MIT License (https://opensource.org/licenses/MIT)
