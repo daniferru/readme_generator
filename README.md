@@ -1,5 +1,5 @@
 # readme_generator
-Daniella Ferrufino
+by Daniella Ferrufino ![Github licence](http://img.shields.io/badge/license-MIT-yellowgreen.svg)
 
 ## Description
 This application allows a developer to quickly and easily create a professional README.md file for their projects using the CLI.
@@ -16,4 +16,4 @@ From there, you will be prompted for information you would like to have in your 
 View a complete video demonstration of the application: 
 
 ## License
-MIT License (https://opensource.org/licenses/MIT)
+This application is licensed under MIT License.
