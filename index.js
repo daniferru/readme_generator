@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
+const cwd = process.cwd();
 
 // array of questions for user
 const questions = [
@@ -59,7 +60,7 @@ const questions = [
 
 //Initializing application
 function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
+    inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README,md File...");
         writeToFile("./dist/README.md", generateMarkdown ({ ...responses }));
     });
@@ -68,5 +69,6 @@ init();
 
 // README.md File
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(cwd().fileName), data);
+    console.log(cwd);
+    return fs.writeFileSync(path.join(cwd, fileName), data);
 }

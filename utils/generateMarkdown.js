@@ -1,7 +1,7 @@
 // function tthat returns a license badge
 function renderLicenseBadge(license) {
     if (license !== "none") {
-        return `![GitHub License](https://img.shields.io/badge/license=${License}=yellowgreen.svg)`;
+        return `![GitHub License](https://img.shields.io/badge/license=${license}=yellowgreen.svg)`;
     }
     return "";
 }
@@ -17,7 +17,7 @@ function renderLicenseLink(license) {
 function renderLicenseSec(license) {
     if (license !== "none") {
         return `## License
-            Licensed under the ${License} license.`;
+            Licensed under the ${license} license.`;
     }
     return "";
 }
@@ -55,4 +55,4 @@ function generateMarkdown(data) {
     `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown;  
