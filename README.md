@@ -14,7 +14,7 @@ node index.js
 From there, you will be prompted for information you would like to have in your README.
 
 View a complete video demonstration of the application: [Walkthrough](https://user-images.githubusercontent.com/120329230/235376464-8fa29f08-c32c-4d4e-9a75-a2e2c8768be6.mp4)<br>
-<img src="/utils/walkthrough.mp4">
+<img src="/utils/walkthroughsnip.PNG">
 
 ## License
 This application is licensed under MIT License.
