@@ -1,6 +1,7 @@
 # Professional README Generator
     by Daniella Ferrufino
     ![GitHub License](https://img.shields.io/badge/license=MIT=yellowgreen.svg)
+    
     ## Table of Contents
     *[Description](#Description)
     *[Installation](#Installation)
